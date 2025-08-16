@@ -110,9 +110,9 @@ def monitor_loop():
                         last_announce_ts = now_ts
                         # send correct message according to new status
                         if s:
-                            send_message("✅ Server is online!")
-                        else:
                             send_message("❌ Server is offline!")
+                        else:
+                            send_message("✅ Server is online!")
                     else:
                         print(f"[{now_hhmmss()}] Change suppressed (cooldown {MIN_ANNOUNCE_GAP_SEC}s)")
             # outer loop sleep
