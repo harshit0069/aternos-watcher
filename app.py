@@ -3,7 +3,7 @@ import logging
 import requests
 import threading
 import time
-from flask import Flask   # 👈 Flask add kiya
+from flask import Flask   
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
